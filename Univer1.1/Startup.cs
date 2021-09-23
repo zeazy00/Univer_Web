@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 
 namespace Univer1._1
@@ -27,7 +29,12 @@ namespace Univer1._1
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRouting();
+
+			var options = new DefaultFilesOptions();
+			options.FileProvider = new PhysicalFileProvider(Path.Combine(env.WebRootPath, "Lab1"));
+			
+			app.UseRouting();
+            //app.UseDefaultFiles(options);
             app.UseDefaultFiles();
             app.UseStaticFiles();
         }
