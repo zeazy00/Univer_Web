@@ -29,12 +29,7 @@ namespace Univer1._1
                 app.UseDeveloperExceptionPage();
             }
 
-
-			var options = new DefaultFilesOptions();
-			options.FileProvider = new PhysicalFileProvider(Path.Combine(env.WebRootPath, "Lab1"));
-			
-			app.UseRouting();
-            //app.UseDefaultFiles(options);
+            app.UseRouting();
             app.UseDefaultFiles();
             app.UseStaticFiles();
         }

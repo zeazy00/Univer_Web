@@ -10,13 +10,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="static\lab2\assets\volunteering.scss" />
+    <Content Include="static\assets\alignment.scss" />
+    <Content Include="static\assets\index.scss" />
+    <Content Include="static\assets\navigation-page.scss" />
     <Content Include="gulpfile.js" />
+    <Content Include="static\index.html" />
+    <Content Include="static\lab1\form.html" />
+    <Content Include="static\lab1\form_money.html" />
+    <Content Include="static\lab1\form_river.html" />
+    <Content Include="static\lab1\form_thief.html" />
+    <Content Include="static\lab1\index.html" />
+    <Content Include="static\lab1\tables.html" />
+    <Content Include="static\lab1\text.html" />
+    <Content Include="static\lab2\index.html" />
+    <Content Include="static\lab2\volunteering.html" />
+    <Content Include="static\lab3\index.html" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\assets\scss\alignment.scss" />
-    <None Include="wwwroot\assets\scss\index.scss" />
-    <None Include="wwwroot\assets\scss\navigation-page.scss" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 </Project>
