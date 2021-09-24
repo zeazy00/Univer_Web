@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="static\lab2\assets\volunteering.scss" />
+    <Content Include="static\lab3\assets\volunteering.scss" />
     <Content Include="static\assets\alignment.scss" />
     <Content Include="static\assets\index.scss" />
     <Content Include="static\assets\navigation-page.scss" />
@@ -23,9 +23,9 @@
     <Content Include="static\lab1\index.html" />
     <Content Include="static\lab1\tables.html" />
     <Content Include="static\lab1\text.html" />
-    <Content Include="static\lab2\index.html" />
-    <Content Include="static\lab2\volunteering.html" />
     <Content Include="static\lab3\index.html" />
+    <Content Include="static\lab3\volunteering.html" />
+    <Content Include="static\lab4\index.html" />
   </ItemGroup>
 
   <ItemGroup>
