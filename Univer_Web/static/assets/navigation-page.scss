@@ -1,9 +1,0 @@
-﻿@import "./alignment.scss";
-
-.main-navigation {
-    @include inline-align-by-flex;
-
-    a{
-        display: inline-block;
-    }
-}

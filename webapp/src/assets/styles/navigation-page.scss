@@ -1,0 +1,29 @@
+﻿@import "./alignment.scss";
+@import "./colors.scss";
+@import "./interaction-reactions.scss";
+
+.main-header {
+    @include row-center-align-by-flex;
+    align-items: stretch;
+    padding: 5px 20%;
+
+    .main-header__caption {
+        margin-right: auto;
+        letter-spacing: 10px;
+        text-transform: capitalize;
+    }
+
+    .main-header__navigation {
+        @include inline-align-by-flex;
+        column-gap: 20px;
+        align-self: end;
+
+        a {
+            @include on-hover-click-color($foreground-accent-color);
+
+            color: $foreground-main-color;
+            display: block;
+            font-size: 24px;
+        }
+    }
+}

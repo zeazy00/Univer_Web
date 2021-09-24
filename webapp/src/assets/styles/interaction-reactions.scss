@@ -1,0 +1,11 @@
+﻿@import "colors.scss";
+
+@mixin on-hover-click-color($color) {
+    &:hover {
+        color: highlight($color, 2);
+    }
+
+    &:active {
+        color: highlight($color, 4);
+    }
+}
