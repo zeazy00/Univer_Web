@@ -1,0 +1,8 @@
+@import url("../../assets/styles/colors.scss");
+@import url("../../assets/styles/alignment.scss");
+
+.social-medias_horizontal{
+    @include column-center-align-by-flex;
+
+    column-gap: 24px;
+}

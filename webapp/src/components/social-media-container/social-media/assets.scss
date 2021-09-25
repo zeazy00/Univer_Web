@@ -1,0 +1,35 @@
+@import '../../../assets/styles/colors';
+
+.social-media-button{
+    background: transparent;
+    display: flex;  
+    justify-content: center;
+
+    .social-media-button__icon{
+        width: 25px;
+        height: 25px;
+
+        display: block;
+
+        .rect{
+            stroke: $active-text-color;
+            fill: none;
+        }
+
+        .logo{
+            fill: $active-text-color;
+            stroke: none;
+        }
+
+       &:hover{
+            .rect{
+                stroke: none;
+                fill:  $active-text-color;
+            }
+
+            .logo{
+                fill: $background-primary-color;
+            }
+       }
+    }
+}

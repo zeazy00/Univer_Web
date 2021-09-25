@@ -1,0 +1,14 @@
+@import './index';
+
+@mixin text {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@mixin header {
+    @include text;
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

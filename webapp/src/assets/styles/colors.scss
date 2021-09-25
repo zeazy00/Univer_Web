@@ -1,6 +1,10 @@
-﻿$background-main-color: #FAF9F9;
-$foreground-main-color: #060606;
-$foreground-accent-color: #89b0ae;
+﻿@import './index';
+
+$background-primary-color:#3B181E;
+
+$inactive-text-color: rgba(255, 255, 255, 0.5);
+$active-text-color: #ffffff;
+
 
 @function highlight($color, $level) {
     @return adjust-color($color, $red: -5 * $level, $green: -5 * $level, $blue: -5 * $level);

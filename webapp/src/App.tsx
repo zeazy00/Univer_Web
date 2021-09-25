@@ -1,7 +1,9 @@
-import './App.css';
+import SecondScreen from 'pages/second-screen/SecondScreen';
 
 export default function App() {
-  return (<div>
-
-  </div>);
+  return (
+    <>
+      <SecondScreen />
+    </>
+  );
 }
