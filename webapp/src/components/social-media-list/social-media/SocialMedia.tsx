@@ -1,5 +1,5 @@
 import SocialMediaProps from "./SocialMediaProps";
-import './assets.scss'
+import './social-media.scss'
 
 export default function SocialMedia(props: SocialMediaProps): JSX.Element {
 

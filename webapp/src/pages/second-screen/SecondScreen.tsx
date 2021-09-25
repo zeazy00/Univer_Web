@@ -1,15 +1,16 @@
-import './assets.scss';
-import SocialMedias from 'components/social-media-container/SocialMedias';
+import './second-screen.scss';
+import SocialMediaList from 'components/social-media-list/SocialMediaList';
 import FlowersOptions from './flowers-options/FlowersOptions';
+import ServiceList from "./service-list/ServiceList";
 
 export default function SecondScreen() {
     return (
         <section className='second-page'>
-            <header>
+            <header className='second-page__header'>
 
             </header>
-            <article>
-
+            <article className='second-page__article'>
+                <ServiceList/>
             </article>
             <footer className='main-page-footer'>
                 <hr />
@@ -24,7 +25,7 @@ export default function SecondScreen() {
                         ]
                     }
                 </FlowersOptions>
-                <SocialMedias className='main-page-footer__social-medias' />
+                <SocialMediaList className='main-page-footer__social-medias' />
                 <div className='main-page-footer__mock_bottom'></div>
             </footer>
         </section>

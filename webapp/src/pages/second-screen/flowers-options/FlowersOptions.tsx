@@ -1,5 +1,5 @@
 import FlowersOptionsProps from "./FlowersOptionsProps";
-import './assets.scss';
+import './flowers-options.scss';
 import classNames from "classnames";
 
 export default function FlowersOptions(props: FlowersOptionsProps) {

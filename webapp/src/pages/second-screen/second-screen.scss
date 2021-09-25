@@ -1,0 +1,53 @@
+@import '../../assets/styles/alignment';
+@import '../../assets/styles/colors';
+
+.second-page {
+  @include column-center-align-by-flex;
+  height: 100%;
+
+  row-gap: 100px;
+
+  background-color: $background-primary-color;
+
+  .second-page__header {
+    height: 55px;
+  }
+
+  .second-page__article {
+    flex: 1;
+  }
+
+  .main-page-footer {
+    @include column-center-align-by-flex;
+
+    width: 100%;
+    max-width: 1820px;
+    margin: 0 auto;
+
+    row-gap: 30px;
+
+    hr {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .main-page-footer__options {
+      margin: 0 auto;
+
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .main-page-footer__social-medias {
+      @include row-center-align-by-flex;
+      column-gap: 50px;
+
+      margin: 0 auto;
+      max-width: 250px;
+      width: 100%;
+    }
+
+    .main-page-footer__mock_bottom {
+
+    }
+  }
+}
