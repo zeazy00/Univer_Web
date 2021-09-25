@@ -25,7 +25,7 @@ export default function SecondScreen() {
                     }
                 </FlowersOptions>
                 <SocialMedias className='main-page-footer__social-medias' />
-                <div className='main-page-footer__mock'></div>
+                <div className='main-page-footer__mock_bottom'></div>
             </footer>
         </section>
     );
