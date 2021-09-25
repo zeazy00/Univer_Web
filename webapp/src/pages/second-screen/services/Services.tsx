@@ -1,6 +1,8 @@
+import './assets.scss';
+
 export default function Services() {
     return (
-        <section>
+        <section className='services'>
 
         </section>
     );

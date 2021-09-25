@@ -1,0 +1,43 @@
+
+.service{
+
+    width: 330px;
+    height: 450px;
+    position: relative;
+
+    .service__background-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .service__number-animation{
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        z-index: 1;
+
+        .service__number-animation__number{
+
+        }
+        hr{
+
+        }
+    }
+
+    .service__text-animation{
+        position: absolute;
+        top: 410px;
+        left: 20px;
+        z-index: 1;
+
+        .service__text-animation__text{
+
+        }
+
+        .service__text-animation__button{
+
+        }
+    }
+}
