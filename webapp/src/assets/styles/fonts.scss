@@ -1,14 +1,14 @@
-@import './index';
+@import "colors";
 
 @mixin text {
-    font-family: Forum;
-    font-style: normal;
-    font-weight: normal;
+  font-family: Forum, serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 @mixin header {
-    @include text;
+  @include text;
 
-    text-transform: uppercase;
-    color: #FFFFFF;
+  text-transform: uppercase;
+  color: $active-text-color;
 }

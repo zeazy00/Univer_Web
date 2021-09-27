@@ -1,0 +1,7 @@
+@mixin horizontal-line($color){
+  height: 1px;
+  vertical-align: bottom;
+  margin: auto 0 0 0;
+
+  background: $color;
+}
