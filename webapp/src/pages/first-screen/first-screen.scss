@@ -1,22 +1,67 @@
 @import "../../assets/styles/colors";
 @import "../../assets/styles/alignment";
+@import "../../assets/styles/fonts";
 
 .first-screen {
   height: 1044px;
   background-image: url("./imgs/flowers_main_page.jpg");
-  padding: 95px 95px 0 95px;
-
   display: grid;
 
-  grid-template-rows: 80px 100% 210px;
+  grid-template-columns: 0.3fr 2.4fr 0.3fr;
+  grid-template-rows: 0.3fr 2fr 1.4fr 0.3fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo . menu"
+    ". welcome ."
+    "social mouse next"
+    "gradient gradient gradient";
 
-  .first-screen__gradient{
+  .first-screen__logo {
+    @include header;
+    grid-area: logo;
 
+    letter-spacing: 0.06em;
+    font-size: 20px;
+    line-height: 22px;
   }
 
-  .social-medias_horizontal {
+  .first-screen__menu {
+    grid-area: menu;
+  }
+
+  .first-screen__welcome {
+    @include header;
+    grid-area: welcome;
+    font-size: 120px;
+    line-height: 132px;
+    letter-spacing: 0.09em;
+
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+    max-width: 920px;
+  }
+
+  .first-screen__social-medias_horizontal {
     @include column-center-align-by-flex;
 
-    column-gap: 24px;
+    row-gap: 24px;
+    grid-area: social;
+  }
+
+  .first-screen__next-screen {
+    grid-area: next;
+  }
+
+  .first-screen__mouse-icon {
+    grid-area: mouse;
+  }
+
+  .first-screen__gradient {
+    grid-area: gradient;
+
+    background: linear-gradient(0deg, $background-primary-color 25%, $background-transparent-color 100%);
   }
 }
+
