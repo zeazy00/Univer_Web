@@ -2,18 +2,18 @@
 @import '../../../assets/styles/colors';
 @import '../../../assets/styles/fonts';
 
-.flowers-options{
+.flowers-options {
     @include row-center-align-by-flex;
     column-gap: 50px;
+    cursor: pointer;
 
-    .flowers-options__option{
+    .flowers-options__option {
         @include text;
-
         color: $inactive-text-color;
         font-size: 16px;
         line-height: 18px;
 
-        &:hover{
+        &:hover {
             color: $active-text-color;
         }
     }
