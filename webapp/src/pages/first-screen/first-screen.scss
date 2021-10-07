@@ -1,8 +1,22 @@
-@import url("../../assets/styles/colors.scss");
-@import url("../../assets/styles/alignment.scss");
+@import "../../assets/styles/colors";
+@import "../../assets/styles/alignment";
 
-.social-medias_horizontal{
+.first-screen {
+  height: 1044px;
+  background-image: url("./imgs/flowers_main_page.jpg");
+  padding: 95px 95px 0 95px;
+
+  display: grid;
+
+  grid-template-rows: 80px 100% 210px;
+
+  .first-screen__gradient{
+
+  }
+
+  .social-medias_horizontal {
     @include column-center-align-by-flex;
 
     column-gap: 24px;
+  }
 }

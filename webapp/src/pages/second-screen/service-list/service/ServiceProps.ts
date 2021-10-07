@@ -1,5 +1,5 @@
 export default interface ServiceProps {
-    key: string;
+    number: string;
     img: string;
     caption: string;
 }

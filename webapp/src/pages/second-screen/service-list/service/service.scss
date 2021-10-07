@@ -1,43 +1,51 @@
+@import "src/assets/styles/fonts";
+@import "src/assets/styles/alignment";
+@import "src/assets/styles/colors";
+@import "src/assets/styles/design-items";
 
-.service{
+.service {
+  @include column-center-align-by-flex;
 
-    width: 330px;
-    height: 450px;
-    position: relative;
+  width: 330px;
+  height: 450px;
+  padding: 35px 20px 15px 20px;
 
-    .service__background-img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
+
+  .service__number-animation {
+    @include row-center-align-by-flex;
+    @include header;
+
+    font-size: 20px;
+    line-height: 22px;
+    column-gap: 10px;
+
+    .service__number-animation__number {
+
     }
 
-    .service__number-animation{
-        position: absolute;
-        top: 50px;
-        left: 20px;
-        z-index: 1;
+    hr {
+      @include horizontal-line($active-text-color);
 
-        .service__number-animation__number{
+      width: 70px;
+    }
+  }
 
-        }
-        hr{
+  .service__number-mock {
+    flex: 1;
+  }
 
-        }
+  .service__text-animation {
+    .service__text-animation__text {
+      @include header;
+      font-size: 16px;
+      line-height: 170%;
+
+      letter-spacing: 0.1em;
+      opacity: 0.9;
     }
 
-    .service__text-animation{
-        position: absolute;
-        top: 410px;
-        left: 20px;
-        z-index: 1;
-
-        .service__text-animation__text{
-
-        }
-
-        .service__text-animation__button{
-
-        }
+    .service__text-animation__button {
+      visibility: hidden;
     }
+  }
 }

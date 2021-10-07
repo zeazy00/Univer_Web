@@ -1,6 +1,9 @@
 @import '../../../assets/styles/alignment';
 
-.services{
-    @include row-center-align-by-flex;   
-     column-gap: 60px;
+.services {
+  @include row-center-align-by-flex;
+  column-gap: 60px;
+
+  margin: 0 auto;
+  max-width: 1500px;
 }
